@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WebImageView">
+        <attr name="loadingPlacehoder" format="integer|reference" />
+        <attr name="errorPlacehoder" format="integer|reference" />
+    </declare-styleable>
+</resources>

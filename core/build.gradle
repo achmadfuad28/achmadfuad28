@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation libs.kotlinStdLibJre8
+    implementation libs.kotlinCrtCore
+    implementation libs.kotlinCrtAndroid
+
+    implementation libs.appcompat
+    implementation libs.constrainlayout
+    implementation libs.retrofit2
+    implementation libs.retrofit2gson
+    implementation libs.retrofit2adapter
+    implementation libs.rxjava2
+    implementation libs.rxandroid2
+    implementation libs.extention
+    implementation libs.viewmodel
+    implementation libs.multidex
+    implementation libs.supportDesign
+    implementation libs.glide
+    implementation libs.koin
+    implementation libs.koinJava
+    implementation libs.koinVM
+    implementation libs.archRoom
+    implementation libs.archExtension
+    implementation libs.archPaging
+    implementation libs.okhttp3logging
+
+    testImplementation 'junit:junit:4.12'
+
+    debugImplementation libs.ganderDebug
+    releaseImplementation libs.ganderRelease
+
+    kapt aptLibs.roomCompiler
+}

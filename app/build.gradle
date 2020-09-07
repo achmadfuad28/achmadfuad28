@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        applicationId "com.android.achmadfuadagustian"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+
+    bundle {
+        language { enableSplit = true }
+        density { enableSplit = true }
+        abi { enableSplit = true }
+    }
+    lintOptions {
+        abortOnError false
+        ignoreWarnings true
+        quiet true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            debuggable true
+            applicationIdSuffix ".debug"
+            versionNameSuffix '-dev'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(':core')
+
+    implementation libs.kotlinStdLib
+    implementation libs.kotlinStdLibJre8
+    implementation libs.kotlinCrtAndroid
+    implementation libs.appcompat
+    implementation libs.constrainlayout
+    implementation libs.recycleview
+    implementation libs.firebase
+    implementation libs.retrofit2
+    implementation libs.retrofit2gson
+    implementation libs.retrofit2adapter
+    implementation libs.rxjava2
+    implementation libs.rxandroid2
+    implementation libs.extention
+    implementation libs.runtime
+    implementation libs.viewmodel
+    implementation libs.archExtension
+    implementation libs.archPaging
+    implementation libs.mapsUtil
+    implementation libs.testRules
+    implementation libs.testRunner
+    implementation libs.multidex
+    implementation libs.supportDesign
+    implementation libs.eventbus
+    implementation libs.actionitembadges
+    implementation libs.facebookLogin
+    implementation libs.easyPermission
+    implementation libs.permissionsDispatcher
+    implementation libs.glide
+    implementation libs.koin
+    implementation libs.koinVM
+    implementation libs.koinJava
+    implementation 'com.squareup.retrofit2:retrofit-adapters:2.6.2'
+
+    kapt aptLibs.permissionsDispatcher
+}
+

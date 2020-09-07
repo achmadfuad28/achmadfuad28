@@ -1,0 +1,19 @@
+<resources>
+    <!--    Common-->
+    <string name="app_name">Achmad Fuad Agustian</string>
+    <string name="default_empty" />
+    <string name="label_loading">Loading…</string>
+    <string name="label_try_again">Try Again</string>
+
+    <!--    Splash Screen-->
+    <string name="app_title">github</string>
+    <string name="app_subtitle">Search Repositories</string>
+
+    <!--    Main Page-->
+    <string name="title_initial_state">Find your stuff</string>
+    <string name="title_empty_state">Can not find your stuff</string>
+    <string name="subtitle_initial_state">Search all of GitHub for Repositories.</string>
+    <string name="subtitle_empty_state">Sorry we couldn\'t find what you were looking for.</string>
+    <string name="hint_search">Search GitHub</string>
+    <string name="message_search_limit">You reach your search limit, please try again later</string>
+</resources>
