@@ -9,3 +9,4 @@
 - Glide
 - Paging
 - Koin for Di
+- Data Binding

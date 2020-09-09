@@ -14,6 +14,7 @@ android {
         versionName "1.0.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "$applicationId-v$versionName($versionCode)")
     }
 
     buildFeatures {
@@ -39,6 +40,12 @@ android {
             versionNameSuffix '-dev'
         }
     }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Achmad_Fuad_Agustian_takehome.apk"
+        }
+    }
 }
 
 dependencies {
@@ -62,21 +69,13 @@ dependencies {
     implementation libs.viewmodel
     implementation libs.archExtension
     implementation libs.archPaging
-    implementation libs.mapsUtil
-    implementation libs.testRules
-    implementation libs.testRunner
     implementation libs.multidex
     implementation libs.supportDesign
-    implementation libs.eventbus
-    implementation libs.actionitembadges
-    implementation libs.facebookLogin
-    implementation libs.easyPermission
     implementation libs.permissionsDispatcher
     implementation libs.glide
     implementation libs.koin
     implementation libs.koinVM
     implementation libs.koinJava
-    implementation 'com.squareup.retrofit2:retrofit-adapters:2.6.2'
 
     kapt aptLibs.permissionsDispatcher
 }

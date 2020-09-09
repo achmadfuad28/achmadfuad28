@@ -15,7 +15,7 @@ abstract class BaseViewHolder<T>(val context: Context, view: View) : RecyclerVie
             setViewBinding(view)
             if (this is ViewModelOwner<*>) {
                 binding.setVariable(BR.vm, viewModel)
-                binding.executePendingBindings();
+                binding.executePendingBindings()
             }
             if (this is BindingViewHolder<*>) {
                 binding.setVariable(BR.view, this)

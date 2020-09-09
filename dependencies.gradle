@@ -37,24 +37,13 @@ ext {
             okhttp3              : "com.squareup.okhttp3:okhttp:4.1.0",
             okhttp3logging       : "com.squareup.okhttp3:logging-interceptor:4.2.0",
 
-            /* Maps Utils */
-            mapsUtil             : "com.google.maps.android:android-maps-utils:0.4+",
-
-            /* Test */
-            testRules            : 'androidx.test:rules:1.1.0',
-            testRunner           : 'androidx.test:runner:1.1.0',
             multidex             : 'androidx.multidex:multidex:2.0.0',
 
             /* Other */
-            facebookLogin        : "com.facebook.android:facebook-login:[5,6)",
-            eventbus             : "org.greenrobot:eventbus:3.1.1",
-            actionitembadges     : "com.mikepenz:actionitembadge:3.3.2@aar",
             javaxInject          : "javax.inject:javax.inject:1",
             glide                : "com.github.bumptech.glide:glide:4.8.0",
-            scanner              : "me.dm7.barcodescanner:zxing:1.9",
             ganderDebug          : "com.ashokvarma.android:gander:1.4.0",
             ganderRelease        : "com.ashokvarma.android:gander-no-op:1.4.0",
-            easyPermission       : "pub.devrel:easypermissions:0.3.0",
             permissionsDispatcher : dependencies.create("org.permissionsdispatcher:permissionsdispatcher:4.5.0") {
                 exclude module: "support-v13"
             },
