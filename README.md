@@ -20,7 +20,9 @@ Hi, I'm Fuad as an Android Developer from Indonesia. i am 31 years old. I live i
 - ImageProcessing : Glide, Picasso
 - DI : Koin, Dagger
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=achmadfuad28&count_private=true&show_icons=true&theme=dracula)
+
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=achmadfuad28&count_private=true&show_icons=true&theme=dracula&hide_border=true)
+
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=achmadfuad28&layout=compact&theme=dracula&show_icons=true&hide_border=true&line_height=24")](https://github.com/achmadfuad28/github-readme-stats)
 
 
