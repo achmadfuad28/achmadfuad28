@@ -1,6 +1,6 @@
 # Achmad Fuad Agustian
 
-Hi, I'm Fuad as an Android Developer from Indonesia. i am 31 years old. I live in Jakarta, Indonesia. Currently I mainly work with Kotlin and Java.
+Hi, I'm Fuad as an Android Developer from Indonesia. i am 32 years old. I live in Jakarta, Indonesia. Currently I mainly work with Kotlin and Java.
 
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-white?style=plastic&logo=Gmail&link=mailto:achmadfuad28@gmail.com)](mailto:achmadfuad28@gmail.com)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=plastic&logo=Linkedin&link=hhttps://www.linkedin.com/in/achmad-fuad-agustian-96645561/)](https://www.linkedin.com/in/achmad-fuad-agustian-96645561/)
